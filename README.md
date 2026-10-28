@@ -1,5 +1,7 @@
 # Odoo 19 to 20 study map
 
+[Open the learning map](https://jainiljoshi.github.io/odoo-19-to-20-study/)
+
 Independent static learning guide linking public Odoo lessons and quizzes to official Odoo 20 changes, recording-version evidence and suggested Runbot exercises. Not an official course or certification question bank.
 
 ## Content
