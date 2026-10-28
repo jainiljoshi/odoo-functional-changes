@@ -1,20 +1,20 @@
-# Odoo 19 to 20 study map
+# Odoo Functional Changes
 
-[Open the learning map](https://jainiljoshi.github.io/odoo-19-to-20-study/)
+[Open the website](https://jainiljoshi.github.io/odoo-functional-changes/)
 
-Independent static learning guide linking public Odoo lessons and quizzes to official Odoo 20 changes, recording-version evidence and suggested Runbot exercises. Not an official course or certification question bank.
+Independent comparison of Odoo 19 to 20 functional workflows, with module filters, 27 official lesson links, release-note sources, recording-version evidence and proposed Runbot checks.
 
-## Content
+Two video-reference versions have been checked. Others are labelled unconfirmed. Runbot exercises have not been performed. This is not an official Odoo course or certification question bank.
 
-- `index.html`: 12 functional areas and 27 public lesson links.
-- `video-versions.html`: two checked video-reference examples.
-- `study-map.json`: structured comparison.
-- `.nojekyll`: serve the static files directly.
+## Files
 
-Other recording versions are marked unconfirmed. Runbot exercises have not been performed. Local quiz banks, personal account logs, team files and local filesystem links are excluded.
+- `index.html`: functional changes and references.
+- `styles.css` and `app.js`: responsive layout, search and filters.
+- `video-versions.html`: two checked version-reference examples.
+- `changes.json`: structured comparison.
+
+No personal account logs, team files or local quiz banks are distributed.
 
 ## Hosting
 
-The repository and website are public, as authorized by the owner. GitHub Pages is hosted from this public repository on GitHub Free. No paid plan is required for this configuration.
-
-Publishing source: Settings → Pages → Deploy from a branch → main → root.
+Public repository and public GitHub Pages website, as authorized by the owner. Publishing source: main branch, repository root. No paid plan required for this configuration.

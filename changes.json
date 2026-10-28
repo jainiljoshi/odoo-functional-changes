@@ -1,6 +1,6 @@
 {
   "checked_on": "2026-10-29",
-  "scope": "Selected functional workflow changes for study; not an exhaustive feature or localization audit. No certification research requested in this pass.",
+  "scope": "Functional workflow changes from Odoo 19 to Odoo 20, linked to existing Odoo lessons, quizzes and official sources.",
   "basis": "Official 19 and 20 release notes, plus the official 20 inventory valuation cheat sheet. These are documented changes, not an independent database validation.",
   "sources": [
     "https://www.odoo.com/odoo-19-release-notes",
@@ -524,5 +524,6 @@
     }
   ],
   "learning_link_scope": "Matched current public lesson/quiz pages with saved accepted quiz records. Video reference versions checked for two examples; others explicitly unconfirmed. This does not establish that Odoo has updated a lesson, video or quiz to 20.",
-  "publication_scope": "Independent learning comparison linking to official Odoo lessons, quizzes and release notes. No local quiz bank, personal account evidence or team records are distributed."
+  "publication_scope": "Independent learning comparison linking to official Odoo lessons, quizzes and release notes. No local quiz bank, personal account evidence or team records are distributed.",
+  "title": "Odoo Functional Changes"
 }
