@@ -13,6 +13,6 @@ Other recording versions are marked unconfirmed. Runbot exercises have not been 
 
 ## Hosting
 
-Repository visibility must remain private. The intended website is public. GitHub Pages from a private personal repository requires an eligible plan, such as GitHub Pro. On GitHub Free, preserve this private repository and use an approved alternate host or upgrade the account before enabling Pages. No billing change is configured by this repository.
+The repository and website are public, as authorized by the owner. GitHub Pages is hosted from this public repository on GitHub Free. No paid plan is required for this configuration.
 
-When eligible: Settings → Pages → Deploy from a branch → main → root.
+Publishing source: Settings → Pages → Deploy from a branch → main → root.
