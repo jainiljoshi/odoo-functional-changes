@@ -46,7 +46,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Read payment progress using the new labels.",
+      "description_paragraphs": [
+        "The renamed states distinguish a registered payment from one that has been reconciled. This matters when users check whether money has merely been recorded or matched with the bank transaction. The wording in an older payment tutorial may therefore differ from the payment record shown in Odoo 20.",
+        "Check the payment record and its bank matching together. Invoice banners belong to a related workflow, so do not assume that every invoice status has been renamed in the same way."
+      ],
+      "description_sources": [
+        {
+          "title": "Accounting workflow",
+          "url": "https://www.odoo.com/documentation/20.0/applications/finance/accounting/getting_started/cheat_sheet.html"
+        }
+      ]
     },
     {
       "area": "Accounting: bill matching",
@@ -86,7 +97,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "See what matched before approving a vendor bill.",
+      "description_paragraphs": [
+        "The matching screen makes the relationship between a supplier bill and purchase order easier to inspect. Existing bill lines can be matched with order lines, and differences in quantities or prices are highlighted. The matching summary helps explain what is linked before the accountant posts or pays the bill.",
+        "A matching percentage is not proof that a bill is commercially correct. Review the quantities received, agreed prices and relevant bill-control policy before accepting a difference."
+      ],
+      "description_sources": [
+        {
+          "title": "Vendor bills",
+          "url": "https://www.odoo.com/documentation/20.0/applications/finance/accounting/vendor_bills.html"
+        }
+      ]
     },
     {
       "area": "Accounting: valuation",
@@ -136,7 +158,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Trace cost changes after goods have moved.",
+      "description_paragraphs": [
+        "A delivery is not always the last event that determines its final cost. A later supplier price difference or landed cost can change the valuation of goods that have already been delivered or consumed. Odoo 20 also changes how perpetual-accounting accruals from the closing report affect inventory valuation.",
+        "For a useful comparison, follow the receipt, bill, delivery and later adjustment together. Check the affected valuation and accounting records rather than assuming the original delivery cost remains unchanged."
+      ],
+      "description_sources": [
+        {
+          "title": "Valuation workflow",
+          "url": "https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/inventory_valuation/cheat_sheet.html"
+        }
+      ]
     },
     {
       "area": "Point of Sale",
@@ -176,7 +209,13 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Separate session closing from payment posting.",
+      "description_paragraphs": [
+        "Session closing and payment posting need to be reviewed separately. The session produces a consolidated sale, while payment journal entries can follow their configured schedule without waiting for the cashier to close the session.",
+        "When comparing an older closing lesson, inspect the resulting sale and payment entries. Also distinguish simplified stock management from a setup that uses Inventory transfers."
+      ],
+      "description_sources": []
     },
     {
       "area": "Inventory",
@@ -226,7 +265,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Review the calculated quantity, not just the button.",
+      "description_paragraphs": [
+        "Replenishment still depends on forecasted stock and the product’s rules. The consolidated Order action changes the interface, while suggested stock levels provide a starting point for reviewing coverage. Routes, minimum and maximum quantities, pack multiples and lead times still affect the result.",
+        "Before ordering, check the quantity and destination. For returns and product-specific landed costs, follow the resulting stock and valuation records instead of expecting the older wizard or receipt-wide cost allocation."
+      ],
+      "description_sources": [
+        {
+          "title": "Reordering rules",
+          "url": "https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/warehouses_storage/replenishment/reordering_rules.html"
+        }
+      ]
     },
     {
       "area": "Purchase",
@@ -276,7 +326,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Keep supplier terms and delivery promises visible.",
+      "description_paragraphs": [
+        "Vendor defaults reduce repeated entry of purchasing terms. The arrival-date change also separates an updated operational expectation from the original supplier promise used to assess delivery performance.",
+        "Review the default Incoterm and both dates when comparing quotations or following a late order. Changing an expected arrival date should not be confused with the supplier having met the original commitment."
+      ],
+      "description_sources": [
+        {
+          "title": "Lead times",
+          "url": "https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/inventory/warehouses_storage/replenishment/lead_times.html"
+        }
+      ]
     },
     {
       "area": "Manufacturing",
@@ -326,7 +387,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Move finished quantities to the next operation sooner.",
+      "description_paragraphs": [
+        "With Continuous Production enabled on the bill of materials, registering a partial quantity on one work order can unblock the next operation for that quantity. The next work center does not have to wait until the entire manufacturing quantity has passed through the first operation.",
+        "For example, the first 30 units of a 120-unit batch can advance while the remaining 90 continue upstream. This does not mean finished goods enter stock immediately: the documented flow places them in stock when the manufacturing order is completed."
+      ],
+      "description_sources": [
+        {
+          "title": "Continuous production",
+          "url": "https://www.odoo.com/documentation/20.0/applications/inventory_and_mrp/manufacturing/workflows/continuous_production.html"
+        }
+      ]
     },
     {
       "area": "Sales and pricing",
@@ -366,7 +438,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Check the context behind a quotation price.",
+      "description_paragraphs": [
+        "A quotation’s price can depend on the selected pricelist, product or variant, quantity, packaging and validity period. Odoo 20 adds more ways to express pricing and edit order lines, so copying a price from an older tutorial is not enough to verify the result.",
+        "Review which rule actually applies and whether the line requires a product. For fulfillment without Inventory, check that flow separately from a warehouse-based delivery process."
+      ],
+      "description_sources": [
+        {
+          "title": "Pricelist rules",
+          "url": "https://www.odoo.com/documentation/20.0/applications/sales/sales/products_prices/prices/pricing.html"
+        }
+      ]
     },
     {
       "area": "Rental and subscriptions",
@@ -420,7 +503,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Recheck the price when a rental quotation changes.",
+      "description_paragraphs": [
+        "Rental pricing now sits in the shared pricing framework. On an editable rental quotation, changing the rental period or pricelist can update existing line prices. Rental price conditions can also depend on the rental duration and the quantity rented, not just the product’s ordinary sales price.",
+        "Working schedules replace the old unavailable-day approach. Review the resulting price and permitted timing together; the separate subscription loyalty addition does not mean every existing subscription automatically receives a reward."
+      ],
+      "description_sources": [
+        {
+          "title": "Rental pricing",
+          "url": "https://www.odoo.com/documentation/20.0/applications/sales/rental.html"
+        }
+      ]
     },
     {
       "area": "Intercompany",
@@ -450,7 +544,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Follow the stock and cost across company boundaries.",
+      "description_paragraphs": [
+        "A warehouse can be resupplied from another company’s warehouse when access, shared products and routes are configured appropriately. A sales order can also use another selected company’s warehouse for delivery. The resulting moves belong to the relevant companies rather than becoming a single-company warehouse transfer.",
+        "Check the supplying company, receiving company, linked documents and valuation trail. This distinction matters because moving stock between two warehouses in one company is a different scenario from moving stock between legal entities."
+      ],
+      "description_sources": [
+        {
+          "title": "Intercompany stock transfers",
+          "url": "https://www.odoo.com/documentation/20.0/applications/general/companies/multi_company.html"
+        }
+      ]
     },
     {
       "area": "CRM",
@@ -490,7 +595,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Connect lead allocation with the next sales action.",
+      "description_paragraphs": [
+        "The rotation options make a team member’s participation in automatic assignment more explicit: always in rotation, in rotation with a limit, or out of rotation. Assignment still needs to be understood alongside the team’s matching rules and how automatic assignment is triggered.",
+        "The subscription links are a separate improvement: an opportunity can connect to an existing subscription and its upsell or renewal quotation. Check those links before creating an unrelated new sales process."
+      ],
+      "description_sources": [
+        {
+          "title": "Lead assignment",
+          "url": "https://www.odoo.com/documentation/20.0/applications/sales/crm/track_leads/lead_scoring.html"
+        }
+      ]
     },
     {
       "area": "AI terminology",
@@ -520,7 +636,18 @@
         "target_version": "20.0",
         "status": "Not tested",
         "instruction": "Choose the 20.0 branch and an available suitable build, not master. Verify the database version and installed apps before following the exercise."
-      }
+      },
+      "description_title": "Map the old Topics terminology to Skills.",
+      "description_paragraphs": [
+        "When an older lesson refers to an AI Topic, look for the corresponding Skills configuration in Odoo 20. Skills group the instructions and tools that define what an agent can do, while sources provide reference information. The terminology change does not make every agent capable of every task.",
+        "The Odoo 20 documentation states that an agent without assigned skills can provide information but cannot perform database tasks. Review the actual skills and tools attached to the agent before expecting it to carry out an operation."
+      ],
+      "description_sources": [
+        {
+          "title": "AI agents and skills",
+          "url": "https://www.odoo.com/documentation/20.0/applications/productivity/ai/agents.html"
+        }
+      ]
     }
   ],
   "learning_link_scope": "Matched current public lesson/quiz pages with saved accepted quiz records. Video reference versions checked for two examples; others explicitly unconfirmed. This does not establish that Odoo has updated a lesson, video or quiz to 20.",
